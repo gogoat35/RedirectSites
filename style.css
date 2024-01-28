@@ -26,8 +26,8 @@ body
 
 /* Style the navbar */
 .navbar {
-  background-color: ##b3d4fc; /* Change the background color as needed */
-  color: #fff; /* Change the text color as needed */
+  background-color: #b3d4fc; /* Change the background color as needed */
+  color: #7d7a7a; /* Change the text color as needed */
   padding: 10px 0;
   position: fixed;
   top: 0;
@@ -63,7 +63,7 @@ body
 }
 
 .navbar__item:hover {
-  color: #00bac7; /* Change the hover color as needed */
+  color: #e6e5e1; /* Change the hover color as needed */
 }
 
 /* Hamburger icon for mobile */
@@ -73,7 +73,7 @@ body
 }
 
 .navbar__item--highlighted {
-  background-color: #ffd700; /* Change the background color as needed */
+  background-color: #e6e5e1; /* Change the background color as needed */
   padding: 8px 16px;
   border-radius: 5px;
 }
