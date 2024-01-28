@@ -1,1 +1,113 @@
+<title>Games</title>
+ <link rel="stylesheet" href="style.css">
+ <style>
 
+body li {
+  list-style: none;
+}
+
+/* Center the links horizontally */
+body a {
+  display: block;
+  text-align: center;
+  margin: 10px 0; /* Optional: Add some vertical spacing between links */
+  color: white;
+  font-size: 32px; /* Adjust the font size as needed */
+  text-decoration: none; /* Optional: Remove underline */
+}
+
+/* Optional: Add hover effect for better user experience */
+body a:hover {
+  text-decoration: underline;
+}
+   h1 {
+
+     text-align: center;
+     font-size: 33px;
+     color: white;
+     text-decoration: none;
+     
+   }
+
+   
+ </style>
+<head>
+ <body>
+
+  <h1>about:blank tab</h1>
+<html><head><base target="_blank"></head><body><button class="c-button">Launch</button>
+<style>
+.c-button {
+  min-width: 100%;
+  font-family: fantasy;
+  appearance: none;
+  border: 0;
+border-color: #fff;
+  border-radius: 5px;
+  background: ##2c4252;
+  color: #fff;
+  padding: 0px 46px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.c-button:hover {
+  background: #29465B;
+}
+
+.c-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #cbd6ee;
+}
+  
+ .c-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+</style>
+
+<script>
+        var urlObj = new window.URL(window.location.href);
+        var url = "https://schoolthebest.pages.dev";
+
+        if (url) {
+            var win;
+
+            document.querySelector('button').onclick = function() {
+                if (win) {
+                    win.focus();
+                } else {
+                    win = window.open();
+                    win.document.body.style.margin = '0';
+                    win.document.body.style.height = '100vh';
+                    var iframe = win.document.createElement('iframe');
+                    iframe.style.border = 'none';
+                    iframe.style.width = '100%';
+                    iframe.style.height = '100%';
+                    iframe.style.margin = '0';
+                    iframe.src = url;
+                    win.document.body.appendChild(iframe);
+                    
+
+                    var interval = setInterval(function() {
+                        if (win.closed) {
+                            clearInterval(interval);
+                            win = undefined;
+
+                        }
+                    }, 500);
+
+
+                }
+            };
+        }
+    </script></body></html>
+   <br>
+<li> <a href="index.html">Home</li>
+
+  
+ </body>
+ <html></html>
