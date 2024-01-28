@@ -13,3 +13,85 @@ body
       overflow: auto; 
   
 }
+/* Reset some default styles */
+ h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a box-sizing border-box model to all elements */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Style the navbar */
+.navbar {
+  background-color: ##b3d4fc; /* Change the background color as needed */
+  color: #fff; /* Change the text color as needed */
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar__branding a {
+  text-decoration: none;
+  color: #fff; /* Change the text color as needed */
+  font-size: 20px; /* Adjust the font size as needed */
+}
+
+.navbar__items {
+  display: flex;
+  list-style: none;
+}
+
+.navbar__item {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #fff; /* Change the text color as needed */
+  font-weight: bold; /* Adjust the font weight as needed */
+  transition: color 0.3s ease;
+}
+
+.navbar__item:hover {
+  color: #00bac7; /* Change the hover color as needed */
+}
+
+/* Hamburger icon for mobile */
+.navbar__item--mobile {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar__item--highlighted {
+  background-color: #ffd700; /* Change the background color as needed */
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+/* Media query for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .navbar__items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #333; /* Change the background color as needed */
+    z-index: 999;
+  }
+
+  .navbar__item--mobile {
+    display: block;
+  }
+}
